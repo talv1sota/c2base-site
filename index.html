@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C2 Base LLC — iOS App Development</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0a;
+            color: #f5f5f7;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            padding: 2rem 2rem 0;
+        }
+
+        .logo {
+            font-size: 1.1rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            color: #f5f5f7;
+        }
+
+        .logo span {
+            color: #2997ff;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .hero {
+            max-width: 640px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.4rem, 6vw, 3.6rem);
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .hero h1 .accent {
+            background: linear-gradient(135deg, #2997ff, #6366f1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            line-height: 1.6;
+            color: #a1a1a6;
+            margin-bottom: 2.5rem;
+            max-width: 480px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            padding: 0.85rem 2rem;
+            background: #2997ff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 980px;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+
+        .contact-btn:hover {
+            background: #0077ed;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 1.25rem;
+            margin-top: 3.5rem;
+        }
+
+        .service-card {
+            background: #1d1d1f;
+            border-radius: 16px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .service-card .icon {
+            font-size: 1.8rem;
+            margin-bottom: 0.6rem;
+        }
+
+        .service-card h3 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #f5f5f7;
+        }
+
+        .service-card p {
+            font-size: 0.78rem;
+            color: #86868b;
+            margin-top: 0.3rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #6e6e73;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">C2 <span>Base</span> LLC</div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1>Crafting <span class="accent">iOS experiences</span> that matter.</h1>
+            <p>C2 Base LLC is an independent app development studio focused on building polished, intuitive applications for iPhone and iPad.</p>
+            <a href="mailto:info@c2base.com" class="contact-btn">Get in Touch</a>
+
+            <div class="services">
+                <div class="service-card">
+                    <div class="icon">📱</div>
+                    <h3>iOS Development</h3>
+                    <p>Native Swift & SwiftUI</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">🎨</div>
+                    <h3>UI/UX Design</h3>
+                    <p>Human Interface focused</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">🚀</div>
+                    <h3>App Store</h3>
+                    <p>Launch & optimization</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2026 C2 Base LLC. All rights reserved.
+    </footer>
+</body>
+</html>
